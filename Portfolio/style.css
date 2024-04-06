@@ -1,0 +1,288 @@
+* {
+    font-family: "PT Serif", serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    margin-left: 125px;
+    align-items: center;
+    /* to place child elements vertically cenetr */
+}
+
+#logo {
+    width: 163px;
+}
+
+/* descendant selector - parent space child(tag) */
+ul li {
+    list-style: none;
+    /* to remove  the bullet point from unordered list */
+
+    display: inline;
+    /* makes all the element in a line */
+    margin: 10px 26px;
+
+}
+
+.link {
+    text-decoration: none;
+    /* to remove the underline of the link */
+    color: black;
+    font-weight: 800;
+    font-size: 21px;
+
+}
+
+/* element:pseudo class { property:value}*/
+.link:hover {
+    color: red;
+}
+
+/* home section */
+.title {
+    margin-top: 13%;
+    margin-left: 8%;
+}
+
+.title h1 {
+    font-size: 55px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+#lastname {
+    color: orange;
+}
+
+.title p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.title a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 400;
+    display: inline-block;
+    /* figure overlap */
+    /* space retain */
+}
+
+.images {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+
+.imagegroup {
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* remove scroll */
+    transition: bottom 1s, left 2s;
+    /* to control movement time */
+}
+
+.images:hover #shape {
+    bottom: 70px;
+}
+
+.images:hover #girl {
+    left: 40%;
+}
+#about
+{
+    margin: 15% 8% 0% 8%;
+}
+.heading
+{
+    text-align: center;
+}
+.heading h1{
+    font-weight: 600;
+    font-size: 35px;
+}
+.heading span{
+    font-size: 20px;
+    color: rgb(9, 187, 9);
+}
+.about-container
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 50px;
+    margin-top: 40px;
+}
+.about-details
+{
+    font-size: 20px;
+    font-weight: 300;
+    word-spacing: 10px;
+}
+.about-img img{
+    width: 81%;
+}
+.information
+{
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.info-box
+{
+    margin-top: 20px;
+}  
+#skill
+{
+    margin: 5% 8%  0 8%;
+}
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 50px;
+    margin-top: 1.5%;
+}
+.skill-img img
+{
+width: 91%;
+margin-left: 4rem;
+}
+.progress-bar
+{
+    margin-top: 2rem;
+}
+.bar-container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.bar-container h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+.bar-container span{
+    font-size: 20px;
+    font-weight: 600;
+}
+.bar
+{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+.html-bar
+{
+    background-color: orange;
+    width: 95%;
+}
+.css-bar
+{
+    background-color: orange;
+    width: 88%;
+}
+.js-bar
+{
+    background-color: orange;
+    width: 89%;
+}
+.react-bar
+{
+    background-color: orange;
+    width: 85%;
+}
+#contact
+{
+    margin: 1% 8%  0 8%;
+}
+.icon-set
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:3%;
+}
+.icon,.uparraow{
+    width: 50px;
+    height: 50px;
+    display: flex;
+   /*  border: 1px solid black; */
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px;
+    border-radius: 50%;
+}
+.icon i{
+    font-size: 30px;
+    color: black;
+
+}
+.icon:hover
+{
+    background-image: linear-gradient(to bottom right,yellow,rgb(255, 89, 0));
+}
+.icon:hover i{
+    color: white;
+    animation: shake 0.75s ;
+}
+@keyframes shake {
+    10%{
+        transform: rotate(30deg);
+    }
+    20%
+    {
+        transform: rotate(-30deg);
+    }
+    30%
+    {
+        transform: rotate(30deg);
+    }
+    40%
+    {
+        transform: rotate(-30deg);
+    }
+}
+footer{
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+footer p{
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+.uparraow
+{
+    background-image: linear-gradient(to bottom right,yellow,rgb(255, 89, 0));
+    float: right;
+    margin-bottom: 30px;
+   
+}
+html{
+    scroll-behavior: smooth;
+}
